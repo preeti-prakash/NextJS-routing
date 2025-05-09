@@ -1,5 +1,5 @@
 "use client";
-// import "./styles.css";
+import "./styles.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -27,7 +27,7 @@ export default function AuthLayout({
           <Link
             href={link.href}
             key={link.name}
-            className={isActive ? "font-bold mr-4" : "text-black-500 mr-4"}
+            className={isActive ? "font-bold mr-4" : "text-blue-500 mr-4"}
           >
             {link.name}
           </Link>
